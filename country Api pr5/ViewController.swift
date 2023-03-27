@@ -20,9 +20,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 if error == nil{
                     self.arr = try JSONDecoder().decode([WelcomeElement].self, from: data!)
                     print(self.arr)
-                                            DispatchQueue.main.async {
-                                                self.countryData.reloadData()
-                                            }
+                    DispatchQueue.main.async {
+                        self.countryData.reloadData()
+                    }
                 }
             }
             catch{
