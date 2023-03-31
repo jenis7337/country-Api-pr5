@@ -24,9 +24,9 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        l2.text = a
+        l2.text = "Country Name :- \(a)"
         img.image = b
-        l3.text = "\(c)"
+        l3.text = "Population :- \(c)"
         img2.image = d
         
       
